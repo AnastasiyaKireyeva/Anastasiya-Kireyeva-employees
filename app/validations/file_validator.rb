@@ -10,7 +10,11 @@ class FileValidator
   end
 
   def validate_file!
-    raise NoFileError unless File.exist?(@file_path)
-    raise EmptyFileError if File.empty?(@file_path)
+    raise NoFileError unless File.exist?(file_path)
+    raise EmptyFileError if File.empty?(file_path)
   end
+
+  private
+
+  attr_reader :file_path
 end
