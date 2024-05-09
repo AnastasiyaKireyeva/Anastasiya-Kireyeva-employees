@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'tk'
-require_relative 'pairs_calculator'
+require_relative 'lib/pairs_calculator'
 
 root = TkRoot.new { title 'Pairs Calculator' }
 root.geometry('500x200')
